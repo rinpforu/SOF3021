@@ -31,21 +31,23 @@ public class UserController {
 	public String create() {
 		return "admin/users/create";
 	}
-	@GetMapping(value="/store")
+	@PostMapping(value="/store")
 	public String store() {
-		return "admin/users/store";
+		return "redirect:/admin/users";
 	}
-	@GetMapping(value="/edit",params = "id")
-	public String edit() {
+	@GetMapping(value="/edit/{id}")
+	public String edit(
+			@PathVariable("id") Integer  id
+	) {
 		return "admin/users/edit";
 	}
-	@GetMapping(value="/update",params = "id")
+	@PostMapping(value="/update/{id}")
 	public String update() {
-		return "admin/users/update";
+		return "redirect:/admin/users";
 	}
-	@GetMapping(value="/delete",params = "id")
+	@PostMapping(value="/delete/{id}")
 	public String delete() {
-		return "admin/users/delete";
+		return "redirect:/admin/users";
 	}
 	
 }
