@@ -1,0 +1,27 @@
+https://download.springsource.com/release/TOOLS/sts4/update/e4.12/
+
+Using dependency Injection Java
+Java Reflection
+
+
+spring.mvc.view.prefix=/views
+spring.mvc.view.suffix=.jsp
+
+
+Dependency: Lớp B phụ thuộc vào lớp A
+Dependency Injection: khởi tạo đối tượng bên ngoài rồi tiêm vào thông qua hàm khởi tạo hoặc setter
+
+
+views -> new Hello.jsp
+
+
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.20</version>
+    <scope>provided</scope>
+</dependency>
+
+
+Flyway Spring boot
+
